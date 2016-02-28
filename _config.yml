@@ -10,9 +10,8 @@ title: iamjameswhitley
 email: james@iamjameswhitley.com
 description: > # this means to ignore newlines until "baseurl:"
   This site serves to describe James Whitley.
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://iamjameswhitley.com" # the base hostname & protocol for your site
 twitter_username: iamJamesWhitley
 
 # Build settings
-markdown: kramdown
+include: ['_pages']
