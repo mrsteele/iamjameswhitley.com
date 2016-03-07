@@ -1,5 +1,4 @@
 <header>
-
     <div class="jumbotron">
         <div class="container">
             <h1>IAmJamesWhitley</h1>
@@ -8,10 +7,13 @@
 
     <div class="container">
         <ul class="nav nav-pills">
+            <li role="presentation">
+                <a href="/">Home</a>
+            </li>
             {% for page in site.pages %}
                 {% if page.title %}
                     <li role="presentation">
-                        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
                 {% endif %}
             {% endfor %}
