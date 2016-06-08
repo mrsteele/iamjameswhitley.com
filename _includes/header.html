@@ -1,4 +1,15 @@
 <header>
+    
+    <ul class="social">
+        {% for social in site.data.socials %}
+            <li>
+                <a href="{{ social.url }}" target="_blank">
+                    <i class="fa fa-{{ social.fa }}"></i>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    
     <div class="jumbotron">
         <div class="container">
             <h1>IAmJamesWhitley</h1>

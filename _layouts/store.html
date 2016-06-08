@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="store">
+    <h2>{{ page.title }}</h2>
+    {% for product in site.products limit:3 %}
+    <li>
+        <img src="{{ product.src }}" alt="{{ product.title }}" />
+        <a href="{{ product.url }}">{{ product.title }}</a>
+        <p>{{ product.description }}</p>
+    </li>
+    {% endfor %}
+</div>

@@ -4,32 +4,38 @@ layout: default
 
 <div class="home">
 
-    <section class="clearfix">
+    <div class="row">
+        <div class="col-md-8">
+            <section class="clearfix">
 
-        <h1>Images</h1>
-        <ul class="img-list">
-            {% for img in site.data.images %}
-            <li>{% include thumbnail.html %}</li>
-            {% endfor %}
-        </ul>
-    </section>
+                <h1>Images</h1>
+                <ul class="img-list">
+                    {% for img in site.data.images %}
+                    <li>{% include thumbnail.html %}</li>
+                    {% endfor %}
+                </ul>
+            </section>
 
-    <section class="clearfix">
-        <h1>Posts</h1>
+            <section class="clearfix">
+                <h1>Posts</h1>
 
-        <ul class="post-list">
-            {% for post in site.posts %}
-            <li>
-                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <ul class="post-list">
+                    {% for post in site.posts %}
+                    <li>
+                        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-                <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-            </li>
-            {% endfor %}
-        </ul>
-    </section>
+                        <h2>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </section>
 
-    <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
-
+            <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p>
+        </div>
+        <div class="col-md-4">
+            <h3>About James</h3>
+        </div>
+    </div>
 </div>

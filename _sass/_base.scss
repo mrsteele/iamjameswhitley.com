@@ -1,3 +1,31 @@
+@import '_variables';
+
+header {
+    position: relative;
+    .social {
+        list-style: none;
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        li {
+            display: inline-block;
+        }
+        
+        a {
+            color: #fff;
+            border-radius: 9999px;
+            background-color: $color-primary;
+            width: 1.5em;
+            height: 1.5em;
+            display: inline-block;
+            text-align: center;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
 footer {
     border-top: solid 1px #ccc;
     margin-top: 10px;

@@ -15,3 +15,9 @@ twitter_username: iamJamesWhitley
 
 # Build settings
 include: ['_pages']
+
+collections:
+  products:
+    output: true
+    permalink: /products/:path/
+  
